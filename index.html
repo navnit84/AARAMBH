@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARAMBH GROUP - Strategy, PR & Digital Solutions</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons --><script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for a professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 4rem;
+            }
+        }
+        /* Custom blue accent color and shadow */
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(30, 64, 175, 0.3), 0 4px 6px -2px rgba(30, 64, 175, 0.1);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aarambh-blue': '#1e40af',
+                        'aarambh-gold': '#f59e0b',
+                        'about-bg': '#e0f2fe', /* Light blue for about section */
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar --><header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo --><div class="flex-shrink-0">
+                    <imgsrc="Gemini_Generated_Image_v7exywv7exywv7ex" alt="" onerror="this.onerror=null;this.src='https://placehold.co/150x40/1e40af/ffffff?text=AARAMBH+GROUP';">
+                </div>
+                <!-- Desktop Navigation --><nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-aarambh-blue transition duration-150 font-medium">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-aarambh-blue transition duration-150 font-medium">Services</a>
+                    <a href="#founder" class="text-gray-600 hover:text-aarambh-blue transition duration-150 font-medium">Founder</a>
+                    <a href="#contact" class="px-4 py-2 bg-aarambh-blue text-white rounded-full hover:bg-aarambh-gold transition duration-300 shadow-md">Contact Us</a>
+                </nav>
+                <!-- Mobile Menu Button --><button id="menu-button" class="md:hidden p-2 text-gray-600 hover:text-aarambh-blue transition duration-150 rounded-lg focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) --><div id="mobile-menu" class="hidden md:hidden pb-4 px-4 space-y-2 bg-white border-t border-gray-100">
+            <a href="#about" class="block py-2 px-3 text-gray-600 hover:text-aarambh-blue hover:bg-gray-50 rounded-lg">About</a>
+            <a href="#services" class="block py-2 px-3 text-gray-600 hover:text-aarambh-blue hover:bg-gray-50 rounded-lg">Services</a>
+            <a href="#founder" class="block py-2 px-3 text-gray-600 hover:text-aarambh-blue hover:bg-gray-50 rounded-lg">Founder</a>
+            <a href="#contact" class="block py-2 px-3 bg-aarambh-blue text-white rounded-lg text-center mt-2 hover:bg-aarambh-gold">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero/About Section --><section id="about" class="bg-about-bg text-gray-800 section-padding">
+        <div class="max-w-7xl mx-auto text-center">
+            <img class="h-20 w-auto mx-auto mb-6" src="uploaded:Gemini_Generated_Image_v7exywv7exywv7ex.jpg-dc896859-7927-444b-83e9-1fadc3246bc0" alt="Aarambh Group Logo">
+
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 text-aarambh-blue">
+                AARAMBH GROUP
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-medium text-gray-700">
+                Igniting Change. Driving Growth. Building Influence.
+            </p>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed">
+                We are a full-spectrum consulting firm specializing in strategic solutions, public relations, and large-scale campaign management across the entire state of Bihar. Our mission is to empower individuals, businesses, and political entities with innovative strategies and expert execution to achieve their goals and make a lasting impact.
+            </p>
+            <a href="#services" class="mt-10 inline-block px-8 py-3 bg-aarambh-gold text-aarambh-blue font-bold text-lg rounded-full shadow-lg hover:bg-aarambh-blue hover:text-white transition duration-300 transform hover:scale-105">
+                Explore Our Solutions
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section --><section id="services" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-aarambh-blue mb-12">What We Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service Card 1: IT Solutions --><div class="service-card bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                    <i data-lucide="monitor" class="w-10 h-10 text-aarambh-gold mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">IT Solutions</h3>
+                    <p class="text-gray-600">Cutting-edge technology and digital infrastructure tailored to optimize your operations and performance.</p>
+                </div>
+
+                <!-- Service Card 2: Public Relations (PR) --><div class="service-card bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                    <i data-lucide="megaphone" class="w-10 h-10 text-aarambh-gold mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Public Relations (PR)</h3>
+                    <p class="text-gray-600">Crafting and managing your public narrative to build trust, credibility, and positive media visibility.</p>
+                </div>
+
+                <!-- Service Card 3: Digital Marketing --><div class="service-card bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                    <i data-lucide="line-chart" class="w-10 h-10 text-aarambh-gold mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Digital Marketing</h3>
+                    <p class="text-gray-600">Strategic online campaigns, social media management, and SEO to maximize your digital footprint and reach.</p>
+                </div>
+
+                <!-- Service Card 4: Political Campaigns --><div class="service-card bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                    <i data-lucide="landmark" class="w-10 h-10 text-aarambh-gold mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Political Campaigns</h3>
+                    <p class="text-gray-600">End-to-end election strategy, voter engagement, ground intelligence, and messaging development.</p>
+                </div>
+
+                <!-- Service Card 5: Business Campaigns --><div class="service-card bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                    <i data-lucide="trending-up" class="w-10 h-10 text-aarambh-gold mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Business Campaigns</h3>
+                    <p class="text-gray-600">Targeted growth strategies, market penetration, and branding campaigns for corporate success.</p>
+                </div>
+
+                <!-- Service Card 6: And Many More --><div class="service-card bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                    <i data-lucide="layers-3" class="w-10 h-10 text-aarambh-gold mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-900">Custom Solutions</h3>
+                    <p class="text-gray-600">Beyond our core offerings, we develop bespoke solutions to meet your unique strategic challenges.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section --><section id="founder" class="section-padding bg-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-aarambh-blue mb-12">Meet Our Founder</h2>
+            <div class="bg-white p-8 rounded-2xl shadow-2xl border-t-4 border-aarambh-blue">
+                <img class="w-32 h-32 rounded-full mx-auto mb-6 object-cover shadow-lg border-4 border-aarambh-gold" 
+                    imgsrc="Gemini_Generated_Image_v7exywv7exywv7ex">
+                     
+                
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">Navnit Singh</h3>
+                <p class="text-xl font-medium text-aarambh-blue mb-4"></p>
+                
+                <p class="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                    Navnit Singh founded AARAMBH GROUP with a vision to bring structured, modern, and effective campaign management to the heart of Bihar. With deep expertise spanning IT infrastructure, public affairs, and large-scale strategic planning, he leads the team in transforming challenges into growth opportunities for our clients.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section --><section id="contact" class="section-padding bg-aarambh-blue text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10">Connect With Us</h2>
+            <p class="text-xl mb-12 max-w-3xl mx-auto opacity-90">
+                Ready to start your journey? Contact us to discuss how AARAMBH GROUP can drive your next success story across Bihar.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                
+                <!-- Phone --><div class="bg-blue-900/50 p-6 rounded-xl shadow-lg">
+                    <i data-lucide="phone" class="w-8 h-8 text-aarambh-gold mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">Call Us</h4>
+                    <a href="tel:7549389187" class="block text-gray-200 hover:text-aarambh-gold transition duration-150">7549389187</a>
+                    <a href="tel:9661235782" class="block text-gray-200 hover:text-aarambh-gold transition duration-150">9661235782</a>
+                </div>
+
+                <!-- Email --><div class="bg-blue-900/50 p-6 rounded-xl shadow-lg">
+                    <i data-lucide="mail" class="w-8 h-8 text-aarambh-gold mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">Email Us</h4>
+                    <a href="mailto:navnit780asr@gmail.com" class="block text-gray-200 hover:text-aarambh-gold transition duration-150">navnit780asr@gmail.com</a>
+                </div>
+
+                <!-- Location --><div class="bg-blue-900/50 p-6 rounded-xl shadow-lg">
+                    <i data-lucide="map-pin" class="w-8 h-8 text-aarambh-gold mb-3"></i>
+                    <h4 class="text-xl font-semibold mb-2">Service Area</h4>
+                    <p class="text-gray-200">
+                        We provide our services across the **entire Bihar state**.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer --><footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; 2025 AARAMBH GROUP. All rights reserved. | Strategic Consulting for a Better Bihar.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Lucide Icons --><script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide icons
+            lucide.createIcons();
+
+            // Mobile menu toggle logic
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuButton.addEventListener('click', () => {
+                const isExpanded = mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden', !isExpanded);
+                menuButton.querySelector('[data-lucide]').setAttribute('data-lucide', isExpanded ? 'x' : 'menu');
+                lucide.createIcons(); // Re-render icon
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuButton.querySelector('[data-lucide]').setAttribute('data-lucide', 'menu');
+                    lucide.createIcons();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
